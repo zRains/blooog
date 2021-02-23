@@ -1,6 +1,6 @@
 const config = {
   title: 'zRain',
-  base: '/VUEPRESS/',
+  base: '/blooog/',
   description: 'Just playing around',
   head: [['link', { rel: 'icon', href: '/img/logo.svg' }]],
   themeConfig: {
