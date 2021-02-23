@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker常用命令 | zRain</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/blooog/img/logo.svg">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/blooog/assets/css/0.styles.e39823b3.css" as="style"><link rel="preload" href="/blooog/assets/js/app.dc9a3ffb.js" as="script"><link rel="preload" href="/blooog/assets/js/2.7529fa5d.js" as="script"><link rel="preload" href="/blooog/assets/js/12.827e99f9.js" as="script"><link rel="prefetch" href="/blooog/assets/js/10.87a5119f.js"><link rel="prefetch" href="/blooog/assets/js/11.ae38bcd0.js"><link rel="prefetch" href="/blooog/assets/js/3.02ece611.js"><link rel="prefetch" href="/blooog/assets/js/4.1c431788.js"><link rel="prefetch" href="/blooog/assets/js/5.2aed7ba0.js"><link rel="prefetch" href="/blooog/assets/js/6.107e88ae.js"><link rel="prefetch" href="/blooog/assets/js/7.320380f6.js"><link rel="prefetch" href="/blooog/assets/js/8.874132af.js"><link rel="prefetch" href="/blooog/assets/js/9.b09ce855.js">
+    <link rel="stylesheet" href="/blooog/assets/css/0.styles.e39823b3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="abyss-container"><div id="Navbar"><a href="/blooog/" class="home-link router-link-active"><img src="/blooog/img/logo.svg" alt="zRain" class="logo"> <span>zRain</span></a> <div class="util"></div> <div id="Viewer"><label><span>🌜</span> <span>🌞</span> <input type="checkbox"> <span class="toggle"></span></label></div> <div id="NavLinks"><div class="nav-item"><a href="/blooog/guide" class="nav-link">
+  📄 记录册
+</a> <!----></div><div class="nav-item"><a href="/blooog/collect/" class="nav-link">
+  📂 收集
+</a> <!----></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>📐 工具</span> <span></span> <div class="dropdown"><a href="/blooog/language/chinese/" class="nav-link">
+  🎨 渐进色选取
+</a></div></div></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>🎈 娱乐</span> <span></span> <div class="dropdown"><a href="/blooog/language/english/" class="nav-link">
+  🌌 雪花绘画
+</a></div></div></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>🧪 实验性</span> <span></span> <div class="dropdown"><a href="/blooog/language/chinese/" class="nav-link">
+  🎵 音乐
+</a></div></div></div></div></div> <div class="Page"><div class="abyss page-left content__default"><p>记录一些 Docker 常用命令</p> <ul><li>查看所有 Docker 镜像</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>docker images
+<span class="token comment"># 或</span>
+docker images <span class="token function">ls</span>
+</code></pre></div><ul><li>查看镜像详细信息</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>docker inspect xxx:TAG <span class="token comment"># xxx:镜像名 TAG:镜像标签</span>
+</code></pre></div><ul><li>删除所有容器</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>docker <span class="token function">rm</span> <span class="token variable"><span class="token variable">$(</span>docker <span class="token function">ps</span> -aq<span class="token variable">)</span></span>
+</code></pre></div></div> <div class="page-right"><section class="content-info"><div class="title">Docker常用命令</div> <div class="tag"><span>Docker</span><span>后端</span></div></section> <section class="content-header"><div>目录</div> <div><ul></ul></div></section></div></div> <!----></div><div class="global-ui"></div></div>
+    <script src="/blooog/assets/js/app.dc9a3ffb.js" defer></script><script src="/blooog/assets/js/2.7529fa5d.js" defer></script><script src="/blooog/assets/js/12.827e99f9.js" defer></script>
+  </body>
+</html>
