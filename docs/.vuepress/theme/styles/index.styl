@@ -1,0 +1,118 @@
+@require './code'
+@require './dark_index'
+@require './wapper'
+@require './animeAction'
+@require './coustom_block'
+html, body
+  padding: 0
+  margin: 0
+body
+  font-family: Helvetica, sans-serif
+  font-size: 16px
+.abyss-container
+  min-height: 'calc(100vh - %s)' % $navbarHeight
+  background: $abyss_whiteColor
+  transition: 0.2s
+  .wapper
+    position: relative
+    width: 100%
+    min-height: calc(100vh - 300px)
+  .Page
+    @extend $wrapper
+    display: flex
+    .page-left
+      max-width: $contentWidth
+      min-width: 0
+    .page-right
+      min-width: ($contentWidth / 3) - 20px
+      margin-left: 20px
+      .content-info
+        padding: 20px
+        background: $abyss_bgColor
+        .title
+          font-size: 0.9rem
+          font-weight: bold
+          margin-bottom: 10px
+        .tag span
+          display: inline-block
+          margin: 0 5px
+          padding: 2px 5px
+          font-size: 0.85rem
+          font-weight: bold
+          background: $abyss_textColor
+          line-height: 100%
+          color: #fff
+      .content-header
+        display: flex
+        flex-direction: column
+        position: sticky
+        top: 'calc(%s + 20px)' % $navbarHeight
+        height: 'calc(100vh - %s - 20px)' % $navbarHeight
+        margin-top: 20px
+        div:nth-child(1)
+          height: 20px
+          line-height: 20px
+          padding-left: 5px
+          font-size: 0.9rem
+          font-weight: bold
+        div:nth-child(2)
+          flex-grow: 1
+          overflow: hidden
+          ul
+            padding: 0 20px
+            margin: 0
+            li
+              list-style: none
+              margin: 4px 0
+              a
+                position: relative
+                display: block
+                box-sizing: border-box
+                padding-left: calc(var(--i) * 15px)
+                font-size: calc(0.9rem - var(--i) * 0.03rem)
+                &::after
+                  position: absolute
+                  content: ''
+                  height: 8px
+                  width: 8px
+                  top: calc(50% - 4px)
+                  left: calc(var(--i) * 15px - 11.5px)
+                  background: currentColor
+                  transition: background 0.2s
+              &.active, &:hover
+                a
+                  color: $abyss_accentColor
+                  &:after
+                    background: $abyss_accentColor
+    > *:first-child, .page-right
+      margin-top: 'calc(%s + 20px)' % $navbarHeight
+  .Guide, .Home, .Collect
+    @extend $util-wapper
+a
+  text-decoration: none
+  color: $abyss_textColor
+  transition-property: color
+  transition-duration: 0.2s
+ul, ol
+  padding-left: 1.2em
+code, kbd, .line-number
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+p, ul, ol
+  line-height: 1.7rem
+strong
+  font-weight: bold
+hr
+  border: 0
+  border-top: 1px solid $abyss_bgColor
+.sketch-amine
+  span
+    display: inline-block
+    overflow: hidden
+    i
+      position: relativ
+      display: block
+      transform: translateY(100%)
+      font-style: normal
+      animation: sketchAmine 0.3s ease-in-out forwards
+      animation-delay: var(--i)
+       

@@ -1,0 +1,69 @@
+.abyss
+  code
+    padding: 0.25rem 0.3rem
+    margin: 0 0.3rem
+    font-size: 0.85em
+    background-color: #e5e5e5
+    .token
+      &.deleted
+        color: #EC5975
+      &.inserted
+        color: $accentColor
+  table
+    border-collapse: collapse
+    margin: 1rem 0
+    display: block
+    overflow-x: auto
+    tr
+      border-top: 1px solid #dfe2e5
+      &:nth-child(2n)
+        background-color: #f6f8fa
+    th, td
+      border: 1px solid #dfe2e5
+      padding: 0.6em 1em
+  h1, h2, h3, h4, h5, h6
+    font-weight: 600
+    line-height: 1.25
+    &::before
+      display: block
+      content: ''
+      margin-top: 'calc(-%s - 20px)' % $navbarHeight
+      height: 'calc(%s + 20px)' % $navbarHeight
+      visibility: hidden
+      pointer-events: none
+  a
+    color: $accentColor
+    &:hover
+      text-decoration: underline
+  pre, pre[class*='language-']
+    line-height: 1.3rem
+    padding: 1.3rem
+    margin: 0.85rem 0
+    background-color: $codeBgColor
+    overflow: auto
+    code
+      color: #fff
+      padding: 0
+      margin: 0
+      background-color: transparent
+  // 代码高亮
+  div[class*='language-']
+    position: relative
+    background-color: $codeBgColor
+    .highlight-lines
+      user-select: none
+      padding-top: 1.3rem
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      line-height: 1.3rem
+      .highlighted
+        background-color: rgba(0, 0, 0, 66%)
+    pre, pre[class*='language-']
+      background: transparent
+      position: relative
+      z-index: 1
+  > *:first-child
+    margin-top: 0
+@import '~prismjs/themes/prism-tomorrow.css'

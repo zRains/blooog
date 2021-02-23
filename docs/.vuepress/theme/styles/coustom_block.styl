@@ -1,0 +1,36 @@
+.coustom_block
+    &.block
+        padding: 0.1rem 1.5rem
+        border-left-width: 0.5rem
+        border-left-style: solid
+        background: $borderColor
+        margin: 1rem 0
+        .title
+            font-weight: bold
+        &.danger
+            border-left-color: #c00
+        &.tip
+            border-left-color: #42b983
+        &.warning
+            border-left-color: #e7c000
+    &.console_error
+        background: #FFF0F0
+        color: #FF1E1E
+        font-family: Consolas
+        font-size: 13.3px
+        position: relative
+        p
+            line-height: 18px
+            margin-left: 25px
+        &::before
+            position: absolute
+            content: '×'
+            height: 13px
+            width: 13px
+            top: 2px
+            left: 5px
+            line-height: 13px
+            border-radius: 50%
+            background: #EB3941
+            color: #fff
+            text-align: center

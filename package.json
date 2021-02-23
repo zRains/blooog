@@ -1,0 +1,22 @@
+{
+  "name": "vuepressblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs",
+    "eject": "vuepress eject"
+  },
+  "author": "zRain",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1",
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-container": "^2.1.5"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
+}

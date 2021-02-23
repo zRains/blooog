@@ -1,0 +1,64 @@
+[data-theme='dark']
+  // Global selectors
+  a, .NavDropdownLink span:first-child, .page .abyss
+    color: $abyss_dark_textColor
+  .NavDropdownLink .dropdown a:hover
+    background: $abyss_dark_whiteColor
+  // Util selectors
+  .abyss-container
+    background: $abyss_dark_whiteColor
+    #Navbar, .dropdown
+      background: $abyss_dark_navColor
+    // Guide page
+    .Guide
+      article
+        background: $abyss_dark_navColor
+        .title
+          color: $abyss_dark_textColor
+        p
+          color: #ccc
+      .ContentSort
+        background: $abyss_dark_navColor
+        .title
+          span:first-child
+            color: $abyss_dark_textColor
+          span:last-child
+            background: $abyss_dark_deepBgColor
+            color: $abyss_textColor
+          &::after
+            border-top: 7px solid $abyss_dark_textColor
+    // Blog Post
+    .Page
+      .page-right
+        .content-info
+          background: $abyss_dark_navColor
+          color: $abyss_dark_textColor
+          .tag span
+            background: $abyss_dark_deepBgColor
+            color: $abyss_textColor
+        .content-header
+          div:first-child
+            color: $abyss_dark_textColor
+      .abyss
+        color: $abyss_dark_textColor
+        a
+          color: $accentColor
+        p > code, li > code, strong > code
+          background: #343a40
+        .coustom_block.block
+          background: $abyss_dark_navColor
+        table tr:nth-child(2n)
+          background-color: $abyss_dark_navColor
+    // Collect
+    .Collect
+      .collect-wapper, .collect-tag
+        background: $abyss_dark_navColor
+      .collect-item
+        background: $abyss_dark_deepBgColor
+      .collect-tag
+        color: $abyss_dark_textColor
+    // Footer
+    .Footer
+      background: $abyss_dark_navColor
+      .copyright
+        color: $abyss_dark_textColor
