@@ -8,14 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.15.5]
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: 🟢 使用Node版本： ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Cache node modules
+    - name: 🟢 缓存node_modules
       uses: actions/cache@v1
       with:
         path: node_modules
@@ -24,11 +24,11 @@ jobs:
           ${{ runner.OS }}-build-${{ env.cache-name }}-
           ${{ runner.OS }}-build-
           ${{ runner.OS }}-
-    - name: Install Packages
+    - name: 🟢 执行npm insatll
       run: npm install
     - name: Build page
       run: npm run build
-    - name: Deploy to gh-pages
+    - name: 🟢 部署github pages
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
         github_token: ${{ secrets.TOKEN }}
