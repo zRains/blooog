@@ -7,6 +7,7 @@
     <ContentGuide v-else-if="ensurePath($page.path, '/guide/')" />
     <Home v-else />
     <Footer v-if="!ensurePath($page.path, '/blog/')" />
+    <router-view></router-view>
   </div>
 </template>
 

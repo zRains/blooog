@@ -12,7 +12,7 @@ const config = {
       { text: '📂 收集', link: '/collect/' },
       {
         text: '📐 工具',
-        items: [{ text: '🎨 渐进色选取', link: '/language/chinese/' }],
+        items: [{ text: '🎨 渐进色选取', link: '/tool/colorPicker/' }],
       },
       {
         text: '🎈 娱乐',
@@ -63,6 +63,12 @@ const config = {
     },
     {
       path: '/collect/',
+      frontmatter: {
+        layout: 'Layout',
+      },
+    },
+    {
+      path: '/tool/colorPicker/',
       frontmatter: {
         layout: 'Layout',
       },
