@@ -1,6 +1,6 @@
 const config = {
   title: 'zRain',
-  // base: '/blooog/',
+  base: '/blooog/',
   description: 'Just playing around',
   head: [['link', { rel: 'icon', href: '/img/logo.svg' }]],
   scss: {
