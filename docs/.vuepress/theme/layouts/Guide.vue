@@ -1,27 +1,31 @@
 <!-- abyss-Guide -->
 <template>
-  <div class="Guide" ref="Guide">
-    <ContentSort :TAGS="tagSort(userContentList)" @reSort="reSort" />
-    <section class="item-list">
-      <ContentItem
-        v-for="(item, index) in sorting
-          ? sortContentList
-          : userContentList.slice(0, ContentLimiter)"
-        :key="index"
-        :item="item"
-      />
-    </section>
-  </div>
+  <Common>
+    <div class="Guide" ref="Guide">
+      <ContentSort :TAGS="tagSort(userContentList)" @reSort="reSort" />
+      <section class="item-list">
+        <ContentItem
+          v-for="(item, index) in sorting
+            ? sortContentList
+            : userContentList.slice(0, ContentLimiter)"
+          :key="index"
+          :item="item"
+        />
+      </section>
+    </div>
+  </Common>
 </template>
 
 <script>
 import ContentItem from '@theme/components/ContentItem.vue'
 import ContentSort from '@theme/components/ContentSort.vue'
+import Common from '@theme/components/core/Common.vue'
 import { ensurePath, getDefaultTitle, tagSort } from '../util'
 export default {
   components: {
     ContentItem,
     ContentSort,
+    Common
   },
   computed: {
     userContentList() {

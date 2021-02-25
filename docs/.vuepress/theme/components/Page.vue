@@ -94,3 +94,71 @@ export default {
   },
 }
 </script>
+<style lang="stylus">
+.Page
+  display: flex
+  .page-left
+    max-width: $contentWidth
+    min-width: 0
+  .page-right
+    min-width: ($contentWidth / 3) - 20px
+    margin-left: 20px
+    .content-info
+      padding: 20px
+      background: $abyss_bgColor
+      .title
+        font-size: 0.9rem
+        font-weight: bold
+        margin-bottom: 10px
+      .tag span
+        display: inline-block
+        margin: 0 5px
+        padding: 2px 5px
+        font-size: 0.85rem
+        font-weight: bold
+        background: $abyss_textColor
+        line-height: 100%
+        color: #fff
+    .content-header
+      display: flex
+      flex-direction: column
+      position: sticky
+      top: 'calc(%s + 20px)' % $navbarHeight
+      height: 'calc(100vh - %s - 20px)' % $navbarHeight
+      margin-top: 20px
+      div:nth-child(1)
+        height: 20px
+        line-height: 20px
+        padding-left: 5px
+        font-size: 0.9rem
+        font-weight: bold
+      div:nth-child(2)
+        flex-grow: 1
+        overflow: hidden
+        ul
+          padding: 0 20px
+          margin: 0
+          li
+            list-style: none
+            margin: 4px 0
+            a
+              position: relative
+              display: block
+              box-sizing: border-box
+              padding-left: calc(var(--i) * 15px)
+              font-size: calc(0.9rem - var(--i) * 0.03rem)
+              &::after
+                position: absolute
+                content: ''
+                height: 8px
+                width: 8px
+                top: calc(50% - 4px)
+                left: calc(var(--i) * 15px - 11.5px)
+                background: currentColor
+                transition: background 0.2s
+            &.active, &:hover
+              a
+                color: $abyss_accentColor
+                &:after
+                  background: $abyss_accentColor
+</style>

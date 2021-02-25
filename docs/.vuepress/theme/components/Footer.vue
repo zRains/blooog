@@ -1,10 +1,10 @@
 <!-- abyss-Footer -->
 <template>
-  <div class="Footer">
+  <footer class="Footer">
     <section class="copyright">
       Copyright © 2021-202x zRain
     </section>
-  </div>
+  </footer>
 </template>
 
 <script>

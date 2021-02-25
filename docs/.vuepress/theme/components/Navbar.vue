@@ -1,6 +1,6 @@
 <!-- abyss-Navbar -->
 <template>
-  <div id="Navbar">
+  <div class="Navbar">
     <RouterLink :to="$localePath" class="home-link">
       <img
         v-if="$site.themeConfig.logo"
@@ -34,7 +34,7 @@ export default {
 $navbar-vertical-padding = 0.7rem
 $navbar-horizontal-padding = 1.5rem
 $conent-height = $navbarHeight - $navbar-vertical-padding * 2
-#Navbar
+.Navbar
   position fixed
   display flex
   top 0

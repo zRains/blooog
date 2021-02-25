@@ -73,7 +73,6 @@ $sup_span
   margin-bottom 20px
   background $abyss_bgColor
   padding 20px
-  transition .2s
   overflow hidden
   .sort-dropdown
     .title

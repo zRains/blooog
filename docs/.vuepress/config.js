@@ -1,8 +1,11 @@
 const config = {
   title: 'zRain',
-  base: '/blooog/',
+  // base: '/blooog/',
   description: 'Just playing around',
   head: [['link', { rel: 'icon', href: '/img/logo.svg' }]],
+  scss: {
+    data: '@import "@theme/styles/_var"',
+  },
   themeConfig: {
     logo: '/img/logo.svg',
     d_logo: '/img/darkLogo.svg',
@@ -58,19 +61,19 @@ const config = {
     {
       path: '/guide/',
       frontmatter: {
-        layout: 'Layout',
+        layout: 'Guide',
       },
     },
     {
       path: '/collect/',
       frontmatter: {
-        layout: 'Layout',
+        layout: 'Collect',
       },
     },
     {
       path: '/tool/colorPicker/',
       frontmatter: {
-        layout: 'Layout',
+        layout: 'ColorPicker',
       },
     },
   ],
@@ -118,25 +121,6 @@ const config = {
         after: '</div>\n',
       },
     ],
-
-    // [
-    //   'vuepress-plugin-container',
-    //   {
-    //     type: 'danger',
-    //     before: info =>
-    //       `<div class="danger custom-block"><p class="title">${info}</p>\n`,
-    //     after: '</div>\n',
-    //   },
-    // ],
-    // [
-    //   'vuepress-plugin-container',
-    //   {
-    //     type: 'warning',
-    //     before: info =>
-    //       `<div class="warning custom-block"><p class="title">${info}</p>\n`,
-    //     after: '</div>\n',
-    //   },
-    // ],
   ],
 }
 

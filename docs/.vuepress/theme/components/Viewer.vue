@@ -4,7 +4,10 @@
     <label ref="Viewer" @click="changeViewMode">
       <span>🌜</span>
       <span>🌞</span>
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        :checked="this.$site.themeConfig.theme === 'dark'"
+      />
       <span class="toggle"></span>
     </label>
   </div>
@@ -12,17 +15,6 @@
 
 <script>
 export default {
-  data() {
-    return {}
-  },
-  mounted() {
-    let Viewer = this.$refs.Viewer.querySelector("input[type='checkbox']")
-    this.$nextTick(() => {
-      if (this.$site.themeConfig.theme === 'light') {
-        Viewer.checked = false
-      } else Viewer.checked = true
-    })
-  },
   methods: {
     changeViewMode: function() {
       if (this.$refs.Viewer.querySelector("input[type='checkbox']").checked) {

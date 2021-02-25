@@ -11,8 +11,6 @@
   "author": "zRain",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.1",
     "vuepress": "^1.8.0",
     "vuepress-plugin-container": "^2.1.5"
   },

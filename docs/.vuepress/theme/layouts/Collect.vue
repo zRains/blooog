@@ -1,33 +1,39 @@
 <!-- abyss-Collect -->
 <template>
-  <div class="Collect until-wapper" ref="Collect">
-    <div
-      class="collect-wapper"
-      v-for="(collect, index) in $site.themeConfig.collect"
-      :key="index"
-    >
-      <a
-        class="collect-item"
-        v-for="(item, _index) in collect.items"
-        :key="_index"
-        :href="item.url"
-        target="_blank"
+  <Common>
+    <div class="Collect" ref="Collect">
+      <div
+        class="collect-wapper"
+        v-for="(collect, index) in $site.themeConfig.collect"
+        :key="index"
       >
-        <div class="icon">
-          <img :src="item.icon" />
-        </div>
-        <div class="info">
-          <span class="text">{{ item.text || '未定义' }}</span>
-          <span class="des">{{ item.des || '未定义' }}</span>
-        </div>
-      </a>
-      <span class="collect-tag">{{ collect.text || '未定义' }}</span>
+        <div class="collect-tag">{{ collect.text || '未定义' }}</div>
+        <a
+          class="collect-item"
+          v-for="(item, _index) in collect.items"
+          :key="_index"
+          :href="item.url"
+          target="_blank"
+        >
+          <div class="icon">
+            <img :src="item.icon" />
+          </div>
+          <div class="info">
+            <span class="text">{{ item.text || '未定义' }}</span>
+            <span class="des">{{ item.des || '未定义' }}</span>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
+  </Common>
 </template>
 
 <script>
+import Common from '@theme/components/core/Common.vue'
 export default {
+  components: {
+    Common,
+  },
   data() {
     return {}
   },
@@ -51,12 +57,19 @@ export default {
 </script>
 <style lang="stylus">
 .Collect
-  padding-top ($navbarHeight / 2)
   .collect-wapper
+    padding-top 20px
     position relative
     background $abyss_bgColor
     margin-bottom calc(1.8rem + 20px)
-    margin-top 30px
+    .collect-tag
+      margin-left 20px
+      padding 0 10px
+      border-left 8px solid $abyss_textColor
+      transition .2s
+      font-size .9rem
+      font-weight bold
+      color $abyss_textColor
     .collect-item
       display inline-flex
       height $navbarHeight
@@ -94,17 +107,4 @@ export default {
             font-size .85rem
       &:hover
         background $abyss_accentColor
-    .collect-tag
-      position absolute
-      display inline-block
-      padding 0 15px 0 10px
-      height ($navbarHeight / 2)
-      box-sizing border-box
-      left 0
-      top 0
-      line-height ($navbarHeight / 2)
-      transform translateY(-95%)
-      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%,0 100%)
-      background $abyss_bgColor
-      font-size .9rem
 </style>
