@@ -19,11 +19,11 @@ const config = {
       },
       {
         text: '🎈 娱乐',
-        items: [{ text: '🌌 雪花绘画', link: '/language/english/' }],
+        items: [{ text: '🌌 雪花绘画', link: '/fun/snow/' }],
       },
       {
         text: '🧪 实验性',
-        items: [{ text: '🎵 音乐', link: '/language/chinese/' }],
+        items: [{ text: '🎵 音乐', link: '/building/music/' }],
       },
     ],
     collect: [

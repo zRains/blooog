@@ -1,6 +1,6 @@
 <!-- abyss-Home -->
 <template>
-  <div class="Home">
+  <div class="Home" :style="`background:url('${$site.base}/img/HomeBg.svg') center center / cover no-repeat`">
     <section>打五把CSGO</section>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
   display flex
   justify-content center
   align-items center
-  background url("/img/HomeBg.svg") center center / cover no-repeat
+  // background url("/img/HomeBg.svg") center center / cover no-repeat
   section
     font-size 2.5rem
     font-weight bold
