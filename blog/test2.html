@@ -8,8 +8,8 @@
     <link rel="icon" href="/blooog/img/logo.svg">
     <meta name="description" content="Just playing around">
     
-    <link rel="preload" href="/blooog/assets/css/0.styles.26eb05b9.css" as="style"><link rel="preload" href="/blooog/assets/js/app.13cdbe81.js" as="script"><link rel="preload" href="/blooog/assets/js/3.672fe986.js" as="script"><link rel="preload" href="/blooog/assets/js/1.788aab61.js" as="script"><link rel="preload" href="/blooog/assets/js/11.f2759a11.js" as="script"><link rel="prefetch" href="/blooog/assets/js/10.1d95f2e3.js"><link rel="prefetch" href="/blooog/assets/js/12.eefc14c6.js"><link rel="prefetch" href="/blooog/assets/js/13.fdb43a5b.js"><link rel="prefetch" href="/blooog/assets/js/14.1299086c.js"><link rel="prefetch" href="/blooog/assets/js/15.ef516f20.js"><link rel="prefetch" href="/blooog/assets/js/16.73972e87.js"><link rel="prefetch" href="/blooog/assets/js/4.d20c2fa2.js"><link rel="prefetch" href="/blooog/assets/js/5.eb43b580.js"><link rel="prefetch" href="/blooog/assets/js/6.ee880b0f.js"><link rel="prefetch" href="/blooog/assets/js/7.12853d0e.js"><link rel="prefetch" href="/blooog/assets/js/8.eee7efb2.js"><link rel="prefetch" href="/blooog/assets/js/9.cff6bfbf.js">
-    <link rel="stylesheet" href="/blooog/assets/css/0.styles.26eb05b9.css">
+    <link rel="preload" href="/blooog/assets/css/0.styles.6ddc0a20.css" as="style"><link rel="preload" href="/blooog/assets/js/app.fe812bac.js" as="script"><link rel="preload" href="/blooog/assets/js/3.9937fdf0.js" as="script"><link rel="preload" href="/blooog/assets/js/1.788aab61.js" as="script"><link rel="preload" href="/blooog/assets/js/11.f2759a11.js" as="script"><link rel="prefetch" href="/blooog/assets/js/10.1d95f2e3.js"><link rel="prefetch" href="/blooog/assets/js/12.eefc14c6.js"><link rel="prefetch" href="/blooog/assets/js/13.fdb43a5b.js"><link rel="prefetch" href="/blooog/assets/js/14.1299086c.js"><link rel="prefetch" href="/blooog/assets/js/15.ef516f20.js"><link rel="prefetch" href="/blooog/assets/js/16.73972e87.js"><link rel="prefetch" href="/blooog/assets/js/4.d20c2fa2.js"><link rel="prefetch" href="/blooog/assets/js/5.eb43b580.js"><link rel="prefetch" href="/blooog/assets/js/6.ee880b0f.js"><link rel="prefetch" href="/blooog/assets/js/7.12853d0e.js"><link rel="prefetch" href="/blooog/assets/js/8.eee7efb2.js"><link rel="prefetch" href="/blooog/assets/js/9.cff6bfbf.js">
+    <link rel="stylesheet" href="/blooog/assets/css/0.styles.6ddc0a20.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="abyss-container"><div class="Navbar"><a href="/blooog/" class="home-link router-link-active"><img src="/blooog/img/logo.svg" alt="zRain" class="logo"> <span>zRain</span></a> <div class="util"></div> <div id="Viewer"><label><span>🌜</span> <span>🌞</span> <input type="checkbox"> <span class="toggle"></span></label></div> <div id="NavLinks"><div class="nav-item"><a href="/blooog/guide" class="nav-link">
@@ -18,9 +18,9 @@
   📂 收集
 </a> <!----></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>📐 工具</span> <span></span> <div class="dropdown"><a href="/blooog/tool/colorPicker/" class="nav-link">
   🎨 渐进色选取
-</a></div></div></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>🎈 娱乐</span> <span></span> <div class="dropdown"><a href="/blooog/language/english/" class="nav-link">
+</a></div></div></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>🎈 娱乐</span> <span></span> <div class="dropdown"><a href="/blooog/fun/snow/" class="nav-link">
   🌌 雪花绘画
-</a></div></div></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>🧪 实验性</span> <span></span> <div class="dropdown"><a href="/blooog/language/chinese/" class="nav-link">
+</a></div></div></div><div class="nav-item"><!----> <div class="NavDropdownLink"><span>🧪 实验性</span> <span></span> <div class="dropdown"><a href="/blooog/building/music/" class="nav-link">
   🎵 音乐
 </a></div></div></div></div></div> <main class="container"><div class="Page"><div class="abyss page-left content__default"><p>很少写登录方面的东西，不过这东西以后肯定是要做的。自己写了个后台就用上了登录，可能有点 low 但还是学到了不少。</p> <p><strong>生成 cookies</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span>
 <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -40,6 +40,6 @@ app<span class="token punctuation">.</span><span class="token function">post</sp
   res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">{</span> stats<span class="token operator">:</span> <span class="token number">200</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre></div></div> <div class="page-right"><section class="content-info"><div class="title">Cookies 登录验证</div> <div class="tag"><span>前端</span></div></section> <section class="content-header"><div>目录</div> <div><ul></ul></div></section></div></div> <!----></main> <!----></div><div class="global-ui"></div></div>
-    <script src="/blooog/assets/js/app.13cdbe81.js" defer></script><script src="/blooog/assets/js/3.672fe986.js" defer></script><script src="/blooog/assets/js/1.788aab61.js" defer></script><script src="/blooog/assets/js/11.f2759a11.js" defer></script>
+    <script src="/blooog/assets/js/app.fe812bac.js" defer></script><script src="/blooog/assets/js/3.9937fdf0.js" defer></script><script src="/blooog/assets/js/1.788aab61.js" defer></script><script src="/blooog/assets/js/11.f2759a11.js" defer></script>
   </body>
 </html>
