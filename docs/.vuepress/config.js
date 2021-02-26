@@ -42,16 +42,49 @@ const config = {
             icon: 'https://www.lipsum.com/favicon.ico',
             des: '假文',
           },
+          {
+            text: 'Text to ASCII Art Generator',
+            url: 'http://patorjk.com/software/taag/',
+            des: '假文',
+          },
+          {
+            text: 'Json Generator',
+            url: 'https://next.json-generator.com/',
+            des: 'Json数据造假',
+            icon: 'https://next.json-generator.com/img/favicon.ico',
+          },
         ],
       },
       {
-        text: '代码工具类',
+        text: '代码工具',
         items: [
           {
             text: 'Carbon',
             url: 'https://carbon.now.sh/',
             des: '代码图片生成工具',
             icon: 'https://carbon.now.sh/favicon.ico',
+          },
+          {
+            text: 'planetB',
+            url: 'http://www.planetb.ca/syntax-highlight-word',
+            des: 'word代码板块美化',
+          },
+        ],
+      },
+      {
+        text: '查询',
+        items: [
+          {
+            text: '🎁 Emoji cheat sheet for GitHub, Basecamp, Slack & more',
+            url: 'https://www.webfx.com/tools/emoji-cheat-sheet/',
+            des: 'MD表情',
+            icon: 'https://www.webfx.com/tools/emoji-cheat-sheet/favicon.ico',
+          },
+          {
+            text: 'Can I Use?',
+            url: 'https://www.caniuse.com/',
+            des: '浏览器兼容查询',
+            icon: 'https://www.caniuse.com/img/favicon-128.png',
           },
         ],
       },
